@@ -5,17 +5,39 @@
 }
 
 body {
+  display: flex;
   background-color: black;
   justify-content: center;
 }
 .calculator-flex {
   display: grid;
   grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: minmax(5rem, auto) repeat(5, 6rem);
-  height: 490px;
-  width: 400px;
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  height: 500px;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
 button {
+  font-size: 2rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: #333;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #d0d0d0;
+}
+
+.two-spots {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  background-color: white;
 }
