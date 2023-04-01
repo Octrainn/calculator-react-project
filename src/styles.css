@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  justify-content: center;
+}
+.calculator-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(5rem, auto) repeat(5, 6rem);
+  height: 490px;
+  width: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+button {
+}
